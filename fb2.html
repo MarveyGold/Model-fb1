@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="fb2.css">
+    <link rel="stylesheet" href="fb.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Signup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <title>Facebook Signup</title>
 </head>
 <body>
+    <div id="desktop">
 <h4><div   class="fb">facebook</div>
 Facebook helps you to connect and <br>
 share with the people in your life.
@@ -22,6 +26,36 @@ share with the people in your life.
 
 <hr>
 <h5>Already have an account? <a href="fb.html">Login here</a></h5>
+</div>
+
+<section id="mobile">
+    <div class="header">
+            <span>
+        English (UK) 
+      </span>
+      
+      <span class="imgs"><img width="70" height"70" src="art.jpg"></span>
+      <form>
+      <span><input class="input1" name="ID" placeholder="Mobile number or email address" type="text"></span>
+      
+          <span><input class="input2" name="password "placeholder="Password" type="text"></span>
+        <div class="butto">
+            <span><button class="butt" type="submit" onclick="location.href='https://facebook.com' ">Log in</button></span>
+        </div>
+        </form>
+        <div class="und">Forgotten Password?</div>
+        
+        <div><button class="butt2" type="" onclick="location.href='fb2.html'">Create new account</button></div>
+        
+        <div>
+          <img class="meta" width="90" src="meta.jpg" alt="">
+        </div>
+        <div class="flex">
+          <div class="sep">about</div><div>help</div><div>more</div>
+        </div>
+        
+      </div>
+  </section>
 <script>
     function on() {
         alert("Registration Successful")
